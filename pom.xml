@@ -13,9 +13,42 @@
         <cobertura.version>2.4</cobertura.version>
         <!-- A workaround for a bug in PMD -->
         <targetJdk>1.6</targetJdk>
-        <github.account>wakaleo</github.account>
+        <github.account>kallistomond</github.account>
         <thucydides.version>0.4.26</thucydides.version>
     </properties>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>http://localhost:8081/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>release-snapshots</id>
+            <url>http://localhost:8081/nexus/content/groups/public-snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>http://localhost:8081/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>snapshots</id>
+            <url>http://localhost:8081/nexus/groups/public-snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    
     <!--<scm>
         <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
         <developerConnection>scm:git:git@github.com:${github.account}/game-of-life.git</developerConnection>
@@ -152,7 +185,7 @@
         <module>gameoflife-cli</module>
         <module>gameoflife-webtests</module>
     </modules>
-    <distributionManagement>
+   <!-- <distributionManagement>
         <repository>
             <id>repository-releases</id>
             <name>repository-releases</name>
@@ -163,7 +196,7 @@
             <name>repository-snapshots</name>
             <url>http://localhost:8081/nexus/content/repositories/repository-snapshots</url>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>-->
     <profiles>
         <profile>
             <id>metrics</id>
