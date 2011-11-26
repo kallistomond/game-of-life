@@ -185,7 +185,7 @@
         <module>gameoflife-cli</module>
         <module>gameoflife-webtests</module>
     </modules>
-   <!-- <distributionManagement>
+   <distributionManagement>
         <repository>
             <id>repository-releases</id>
             <name>repository-releases</name>
@@ -196,7 +196,7 @@
             <name>repository-snapshots</name>
             <url>http://localhost:8081/nexus/content/repositories/repository-snapshots</url>
         </snapshotRepository>
-    </distributionManagement>-->
+    </distributionManagement>
     <profiles>
         <profile>
             <id>metrics</id>
