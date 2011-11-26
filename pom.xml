@@ -6,7 +6,7 @@
     <version>0.8.28-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>gameoflife</name>
-    <url>https://github.com/wakaleo/game-of-life</url>
+    <!--<url>https://github.com/wakaleo/game-of-life</url>-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <easyb.version>1.4</easyb.version>
@@ -16,11 +16,11 @@
         <github.account>wakaleo</github.account>
         <thucydides.version>0.4.26</thucydides.version>
     </properties>
-    <scm>
+    <!--<scm>
         <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
         <developerConnection>scm:git:git@github.com:${github.account}/game-of-life.git</developerConnection>
         <url>scm:git:git@github.com:${github.account}/game-of-life.git</url>
-    </scm>
+    </scm>-->
     <build>
         <plugins>
             <plugin>
@@ -154,14 +154,14 @@
     </modules>
     <distributionManagement>
         <repository>
-            <id>releases</id>
-            <url>http://wakaleo-labs.com:8082/nexus/content/repositories/releases
-            </url>
+            <id>repository-releases</id>
+            <name>repository-releases</name>
+            <url>http://localhost:8081/nexus/content/repositories/repository-releases</url>
         </repository>
         <snapshotRepository>
-            <id>snapshots</id>
-            <url>http://wakaleo-labs.com:8082/nexus/content/repositories/snapshots
-            </url>
+            <id>repository-snapshots</id>
+            <name>repository-snapshots</name>
+            <url>http://localhost:8081/nexus/content/repositories/repository-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
     <profiles>
