@@ -94,11 +94,10 @@
                                     <goal>run</goal>
                                 </goals>
                                 <configuration>
-                                    <tasks>
-                                        <echo message="Starting JMeter tests" />
-                                        <ant antfile="build.xml" target="jmeter" />
-                                        <echo message="JMeter tests done" />
-                                    </tasks>
+                                    <target>
+                                        <taskdef name="jmeter" classpath="C:\Users\WCAPOMA\.jenkins\workspace\game-of-life-default\gameoflife-web\tools\jmeter\extras\ant-jmeter-1.0.9.jar" classname="org.programmerplanet.ant.taskdefs.jmeter.JMeterTask"/>
+										<jmeter jmeterhome="C:\Users\WCAPOMA\.jenkins\workspace\game-of-life-default\gameoflife-web\tools\jmeter\" testplan="${basedir}/src/test/jmeter/gameoflife-100-users.jmx" resultlog="${basedir}/target/JMeterResults.jtl"/>
+                                    </target>
                                 </configuration>
                             </execution>
                         </executions>
