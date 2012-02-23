@@ -20,7 +20,7 @@ public class WhenTheUserGoesToTheHomePage {
     @Managed
     WebDriver driver;
 
-    @ManagedPages(defaultUrl = "http://localhost:9090")
+    @ManagedPages(defaultUrl = "http://10.248.109.229:9090")
     public Pages pages;
 
     @Steps
