@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
-        <webdriver.base.url>http://10.248.109.229:${jetty.port}</webdriver.base.url>
+        <webdriver.base.url>http://localhost:${jetty.port}</webdriver.base.url>
     </properties>
     <dependencies>
         <dependency>
