@@ -144,7 +144,7 @@
                         </executions>
                         <configuration>
                             <container>
-                                <containerId>jetty7x</containerId>
+                                <containerId>jetty8x</containerId>
                                 <type>embedded</type>
                             </container>
                             <configuration>
